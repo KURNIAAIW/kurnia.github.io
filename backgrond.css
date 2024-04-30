@@ -1,0 +1,21 @@
+@keyframes wave {
+  0% {
+    transform: translate(-25%, 20%) rotate(0deg);
+  }
+  100% {
+    transform: translate(25%, -20%) rotate(360deg);
+  }
+}
+
+.wave {
+  width: 200%;
+  height: 200%;
+  background: repeating-linear-gradient(
+    45deg,
+    #6366f1,
+    #6366f1 20px,
+    #ffffff 20px,
+    #ffffff 40px
+  );
+  animation: wave 10s infinite linear;
+}
